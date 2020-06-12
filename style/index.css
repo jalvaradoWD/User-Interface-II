@@ -1,1 +1,30 @@
 /* Add CSS styling here */
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 50px;
+}
+
+#nav-title {
+  font-size: 1.35rem;
+}
+
+#navigation {
+  display: flex;
+  border-collapse: collapse;
+  width: 40rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  outline: 2px solid black;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}

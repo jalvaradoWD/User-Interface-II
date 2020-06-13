@@ -1,17 +1,18 @@
 header {
   display: flex;
   flex-direction: column;
-  height: 25rem;
+  padding: 10rem 0;
   justify-content: center;
   align-items: center;
   align-content: space-between;
   text-align: center;
+  min-width: 720px;
+  height: 1280px;
 
   background-color: lightcoral;
   background-image: url(https://picsum.photos/1280/720?random=1);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-origin: content-box;
 }
 
 h1 {

@@ -4,13 +4,21 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 #nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   height: 50px;
+  margin: 1rem;
 }
 
 #nav-title {
@@ -63,4 +71,47 @@ button {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 1.1rem;
+
+  background-color: lightsalmon;
+  color: black;
+}
+
+/* CSS Animations */
+
+#navigation a:hover {
+  color: white;
+  background-color: black;
+  transition: 0.2s;
+  animation: changeSize 0.5s linear forwards;
+}
+
+@keyframes changeSize {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes changeButtonColor {
+  0% {
+    background-color: lightsalmon;
+  }
+  25% {
+    background-color: cornflowerblue;
+  }
+  50% {
+    background-color: crimson;
+  }
+  75% {
+    background-color: purple;
+  }
+  100% {
+    background-color: lightsalmon;
+  }
+}
+
+button:hover {
+  animation: changeButtonColor 1s forwards;
 }

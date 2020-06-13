@@ -1,0 +1,31 @@
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+header {
+  padding: 5rem 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin: 1rem 0;
+}
+
+section p {
+  width: 20rem;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 1px;
+}

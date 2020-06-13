@@ -45,8 +45,9 @@ section {
   margin: 10rem 0;
 }
 
-section span {
+section h2 {
   width: 15rem;
   margin: 0 auto;
   padding: 1rem;
+  font-size: 1.25rem;
 }

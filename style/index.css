@@ -10,7 +10,7 @@ header {
   height: 1280px;
 
   background-color: lightcoral;
-  background-image: url(https://picsum.photos/1280/720?random=1);
+  background-image: url(https://picsum.photos/2000/2000?random=1);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -50,4 +50,8 @@ section h2 {
   margin: 0 auto;
   padding: 1rem;
   font-size: 1.25rem;
+}
+
+main {
+  margin: 0 1rem;
 }

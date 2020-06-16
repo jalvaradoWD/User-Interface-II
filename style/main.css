@@ -27,7 +27,6 @@ body {
 
 #navigation {
   display: flex;
-  border-collapse: collapse;
   width: 40rem;
 }
 
@@ -59,8 +58,10 @@ section a {
 }
 
 footer {
-  padding: 5rem 10rem;
-  text-align: center;
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: lightblue;
 }
 
@@ -114,4 +115,29 @@ button {
 
 button:hover {
   animation: changeButtonColor 1s forwards;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  #nav-bar {
+    justify-content: space-around;
+  }
+
+  #navigation {
+    width: 25rem;
+  }
+
+  #navigation a {
+    margin: 1rem 0;
+    font-size: 1.05rem;
+    padding: 1rem 1.15rem;
+  }
+
+  footer {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
 }

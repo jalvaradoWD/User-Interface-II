@@ -1,0 +1,143 @@
+/* Add CSS styling here */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  height: 50px;
+  margin: 1rem;
+}
+
+#nav-title {
+  font-size: 1.35rem;
+}
+
+#navigation {
+  display: flex;
+  width: 40rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  outline: 2px solid black;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2.5rem 5rem;
+}
+
+section a {
+  font-size: 1.75rem;
+}
+
+footer {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+button {
+  border: none;
+  padding: 1.25rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.1rem;
+
+  background-color: lightsalmon;
+  color: black;
+}
+
+/* CSS Animations */
+
+#navigation a:hover {
+  color: white;
+  background-color: black;
+  transition: 0.2s;
+  animation: changeSize 0.5s linear forwards;
+}
+
+@keyframes changeSize {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes changeButtonColor {
+  0% {
+    background-color: lightsalmon;
+  }
+  25% {
+    background-color: cornflowerblue;
+  }
+  50% {
+    background-color: crimson;
+  }
+  75% {
+    background-color: purple;
+  }
+  100% {
+    background-color: lightsalmon;
+  }
+}
+
+button:hover {
+  animation: changeButtonColor 1s forwards;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  #nav-bar {
+    justify-content: space-around;
+  }
+
+  #navigation {
+    width: 25rem;
+  }
+
+  #navigation a {
+    margin: 1rem 0;
+    font-size: 1.05rem;
+    padding: 1rem 1.15rem;
+  }
+
+  footer {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+}

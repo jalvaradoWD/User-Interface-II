@@ -17,7 +17,7 @@ section h2 {
 section p {
   line-height: 1.5;
   font-size: 1.05rem;
-  width: 60%;
+  width: 45%;
   text-align: justify;
 }
 
@@ -34,4 +34,16 @@ main {
 
 main section {
   margin: 3rem 0;
+}
+
+@media (max-width: 800px) {
+  section p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  section p {
+    width: 80%;
+  }
 }
